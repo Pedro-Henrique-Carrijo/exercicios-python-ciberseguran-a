@@ -1,4 +1,4 @@
-# Parte 1: Entendendo o Polimorfismo
+# Parte 1
 class Animal:
     def mover(self):
         pass
@@ -12,7 +12,7 @@ veiculo = Veiculo()
 animal.mover()
 veiculo.mover()
 
-# Parte 2: Polimorfismo com Métodos
+# Parte 2
 class Cachorro:
     def falar(self):
         print("Au au!")
@@ -33,7 +33,7 @@ class Papagaio:
 papagaio = Papagaio()
 papagaio.falar()
 
-# Parte 3: Uso de Polimorfismo com Funções
+# Parte 3
 def chamar_fala(objeto):
     if hasattr(objeto, 'falar'):
         objeto.falar()
@@ -50,7 +50,7 @@ class Carro:
 carro = Carro()
 chamar_fala(carro)
 
-# Parte 4: Polimorfismo com Herança
+# Parte 4
 class Animal:
     def falar(self):
         pass
@@ -75,7 +75,7 @@ animais = [Cachorro(), Gato(), Papagaio(), Peixe()]
 for animal in animais:
     animal.falar()
 
-# Parte 5: Polimorfismo com Interfaces
+# Parte 5
 from abc import ABC, abstractmethod
 
 class Forma(ABC):
@@ -114,7 +114,7 @@ class Triangulo(Forma):
 triangulo = Triangulo(6, 8)
 print(triangulo.area())
 
-# Parte 6: Polimorfismo com Sobrecarga
+# Parte 6
 class Calculadora:
     def somar(self, a, b, c=0):
         return a + b + c
@@ -123,7 +123,7 @@ calc = Calculadora()
 print(calc.somar(2, 3))
 print(calc.somar(2, 3, 4))
 
-# Parte 7: Polimorfismo com Sobrescrita
+# Parte 7
 class Forma:
     def desenhar(self):
         print("Desenhando uma forma")
@@ -141,7 +141,7 @@ quadrado = Quadrado()
 circulo.desenhar()
 quadrado.desenhar()
 
-# Parte 8: Polimorfismo com Coleções
+# Parte 8
 objetos = [Cachorro(), Gato(), Papagaio(), Peixe()]
 for obj in objetos:
     if hasattr(obj, 'falar'):
@@ -152,7 +152,7 @@ for obj in objetos:
     if hasattr(obj, 'falar'):
         obj.falar()
 
-# Parte 9: Praticando o Polimorfismo
+# Parte 9
 class Pagamento:
     def processar_pagamento(self):
         pass
@@ -173,7 +173,7 @@ pagamentos = [Credito(), Debito(), Pix()]
 for pagamento in pagamentos:
     pagamento.processar_pagamento()
 
-# Parte 10: Desafios Finais
+# Parte 10
 class Transporte:
     def acelerar(self):
         pass
